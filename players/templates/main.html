@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+    <table>
+    {% for p in pl %}
+    <tr><td>{{ p.name }}</td><td>{{ p.wins }}</td><td>{{ p.lesions }}</td></tr>
+    {% endfor %}
+    </table>
+{% endblock %}
